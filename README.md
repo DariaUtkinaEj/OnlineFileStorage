@@ -1,6 +1,12 @@
 # Still In Progress, coming soon!
 
 ## NodeJS Online File Storage
+I use:
+1) NodeJS, 
+2) npm, 
+3) Express,
+4) hbs (Handlebars - to work with views) 
+5) Multer (to work with files)
 * To launch project run:
 ``` node app ```
 * To test list of uploaded files run:
