@@ -13,5 +13,13 @@
         <h3> Online File Storage </h3>
         <h4> Welcome :) </h4>
         <div> {{description}} </div>
+        <div>
+            <ul>
+                {{#each links}}
+                <li> <a href="/files/{{this}}" title="{{this}}" target="_blank" download="" > {{this}} </a> </li>
+<!--                    <li> <a href="/files/{{this}}" title="{{this}}" download="" > {{this}} </a> </li>-->
+                {{/each}}
+            </ul>
+        </div>
     </body>
 </html>

@@ -1,10 +1,13 @@
 # Still In Progress, coming soon!
 
 ## NodeJS Online File Storage
-* To launch project run
+* To launch project run:
 ``` node app ```
-* 
+* To test list of uploaded files run:
+``` node folder ```
 
+I got an answer like that: (here's array of uploaded files)
+![img.png](img.png)
 
 
 
@@ -19,4 +22,5 @@ Methods:
 Навигация: 
 1) / - главная страница;
 2) /upload - страница загрузки;
-3) 
+
+

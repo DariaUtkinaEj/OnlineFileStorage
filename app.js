@@ -7,6 +7,9 @@ const app = express();
 /** Подключаем Handlebar */
 const hbs = require("hbs");
 
+/** Подключаем файл Фолдер */
+const folder = require("./folder");
+
 /** Подключаем Multer */
 const multer = require("multer");
 
@@ -43,9 +46,11 @@ hbs.registerPartials(__dirname+"/views/partial")
  * (ex: localhost:3000/)
  */
 app.get("/", function(request, response){
+    let links = folder.getFiles("./files/");
     response.render("index", {
         title: "Главная страница!",
         description: "Вывод хранимых файлов.",
+        links: links,
     });
 });
 
