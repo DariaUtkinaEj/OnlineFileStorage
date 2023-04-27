@@ -5,21 +5,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title> {{title}} </title>
+
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.15/dist/css/uikit.min.css" />
+
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.15/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.15/dist/js/uikit-icons.min.js"></script>
+
     </head>
     <body>
         <div> {{> menu}}
         </div>
         <hr>
         <h3> Online File Storage </h3>
-        <h4> Welcome :) </h4>
+<!--        <h4> Welcome :) </h4>-->
         <div> {{description}} </div>
         <div>
-            <ul>
                 {{#each links}}
-                <li> <a href="/files/{{this}}" title="{{this}}" target="_blank" download="" > {{this}} </a> </li>
-<!--                    <li> <a href="/files/{{this}}" title="{{this}}" download="" > {{this}} </a> </li>-->
+                    <div class = "uk-card uk-card-default uk-card-body">
+                <li style="list-style-type: none;"> <a href="/files/{{this}}" uk-icon="icon: pagekit" title="{{this}}" download="" > </a> {{this}} </li>
+<!--                    <a href="" uk-icon="icon: pagekit"></a>-->
+<!--                    <li> <a href="/files/{{this}}" title="{{this}}" target="_blank"> {{this}} </a> </li>-->
+                    </div>
                 {{/each}}
-            </ul>
         </div>
     </body>
 </html>
