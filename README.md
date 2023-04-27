@@ -1,5 +1,3 @@
-# Still In Progress, coming soon!
-
 ## NodeJS Online File Storage
 I use:
 1) NodeJS, 
@@ -8,6 +6,9 @@ I use:
 4) hbs (Handlebars - to work with views) 
 5) Multer (to work with files)
 6) UIkit framework (for views)
+
+* To install project run: 
+``` npm install ```
 * To launch project run:
 ``` node app ```
 * To test list of uploaded files run:
@@ -18,13 +19,14 @@ I got an answer like that: (here's array of uploaded files)
 
 
 
-HTTP Methods:
+Methods:
 * get - получаем при переходе по ссылкам, получение данных о ресурсах.
 * post - получаем даннные из форм, создание новых ресурсов и подресурсов.
 * set - присваиваем данные,
 * put - обновляем данные, обновление существующих ресурсов.
 * delete - удаляем данные, удаляет ресурсы,
 * patch - обновляет только определённые поля существующих ресурсов.
+* use - используем данные.
 
   
 Навигация: 
