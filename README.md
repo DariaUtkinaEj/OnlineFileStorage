@@ -7,6 +7,7 @@ I use:
 3) Express,
 4) hbs (Handlebars - to work with views) 
 5) Multer (to work with files)
+6) UIkit framework (for views)
 * To launch project run:
 ``` node app ```
 * To test list of uploaded files run:
